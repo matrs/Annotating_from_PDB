@@ -10,7 +10,7 @@ Once installed, use `config/config.yaml` to set their paths.
 
 ## Rules' configuration
 
-The code inside `rules/` and `scripts/` should't be modified with only one exception
+Only modify the code inside `rules/` and `scripts/` if you known what you are doing.
 
 ## Software Requirements
 

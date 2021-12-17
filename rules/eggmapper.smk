@@ -77,7 +77,7 @@ checkpoint select_by_size:
     output:
         directory("results/selected_seqs_by_size")
     params:
-        config["sizes"]
+        sizes = config["sizes"]
     shell:
         """
         mkdir -p {output[0]} 
