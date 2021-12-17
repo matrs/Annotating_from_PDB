@@ -33,3 +33,8 @@ their members). That file then is used to build a new table, compatible with `ko
 - `{prefix}__heatmap.pdf`
 - `{prefix}__barplot.pdf`
 
+
+## Others
+
+The `rules.pdf` represents the DAG of this workflow, but it doesn't include the rules related to
+`hhblits`, because those rules depend on a `checkpoint` rule. This isn't a bug, but it's related to how snakemake works.
