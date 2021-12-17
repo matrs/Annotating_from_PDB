@@ -8,7 +8,9 @@ This workflow needs 3 databases already installed before running it:
 
 Once installed, use `config/config.yaml` to set their paths.
 
+## Rules' configuration
 
+The code inside `rules/` and `scripts/` should't be modified with only one exception
 
 ## Software Requirements
 

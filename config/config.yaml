@@ -21,6 +21,15 @@ subject_cover: 50
 #prefix used by emapper
 pref_emapper: akk_85_80_cov50
 
+#### rule select_by_size ####
+# Set the sizes of the proteins to be aligned against uniclust and pdb70. 
+# We select proteins starting from 300 amino-acids but for testing, we only select
+# a very narrow set. For real runs, use something like "-size +302c", without 
+# the second "-size", so it will select sequences of 300 amino-acids and greater.
+# 300 aa is set arbitrarly, but has to do with the chance to obtain a good hit against pdb70,
+# and avoid to align hundreds of very short sequences which is computionally intensive 
+sizes: "-size +302c -size -304c"
+
 #### hhblits params ####
 
 msa_db: "/mnt/DATA/DBs/hhsuite/UniRef30_2021_03/UniRef30_2021_03"
