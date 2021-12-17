@@ -1,6 +1,6 @@
-# Annotating "hypothetical" proteins from PDB
+# Annotating "hypothetical" proteins with the PDB
 
-See `config/` for configuration information.
+**See `config/` for configuration information.**
 
 This workflow takes as input a set of protein sequences. It clusters them and then
 functionally annotates the clusters' representatives using **Eggnog DB**, and picks those without KO annotations
