@@ -2,7 +2,7 @@
 
 See `config/` for configuration information.
 
-This workflow takes as input a set of protein sequences. It clusters and then
+This workflow takes as input a set of protein sequences. It clusters them and then
 functionally annotates the clusters' representatives using **Eggnog DB**, and picks those without KO annotations
 to
 continue the process. These *"hypothetical proteins"* get aligned by `hhblits` against **Uniclust30** and then against **PDB70**.  
