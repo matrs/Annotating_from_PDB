@@ -30,8 +30,8 @@ one or more KO terms assigned (the rule `propagate_annotations` propagates the a
 their members). That file then is used to build a new table, compatible with `ko_mapper.py`, which will produce 3 files:
 
 - `{prefix}_module_completeness.tab`
-- `{prefix}__heatmap.pdf`
-- `{prefix}__barplot.pdf`
+- `{prefix}_heatmap.pdf`
+- `{prefix}_barplot.pdf`
 
 
 ## Others
