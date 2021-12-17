@@ -1,0 +1,33 @@
+# directory containing the faa files (amino-acid gene seqs)
+input_dir: "g_akker_prokka_test"
+
+##### mmseqs parameters #####
+
+# minimum amino-acid identity
+identity: 0.8 
+# minimum query and target coverage, given cov_mode 0
+coverage: 0.85
+# prefix used for mmseqs 
+pref_mmseqs: akk_80_85
+
+##### emapper.py params #####
+egg_db: "/mnt/DATA/DBs/Eggnog/V5.0.2"
+method: diamond
+# check emapper.py --list_taxa | less
+tax_scope: "203494,74201,2"
+threads: 16
+query_cover: 50
+subject_cover: 50
+#prefix used by emapper
+pref_emapper: akk_85_80_cov50
+
+#### hhblits params ####
+
+msa_db: "/mnt/DATA/DBs/hhsuite/UniRef30_2021_03/UniRef30_2021_03"
+pdb_db: "/mnt/DATA/DBs/hhsuite/pdb70/pdb70"
+
+#### ko_mapper.py params (from microbeannotator)####
+
+# Path to the script which is included in the microbeannotator package.
+ko_mapper_path: "/home/jmaturana/miniconda3/envs/microbeannotator/lib/python3.7/site-packages/microbeannotator/pipeline/ko_mapper.py"
+ko_prefix: "akk_85_80_cov50"

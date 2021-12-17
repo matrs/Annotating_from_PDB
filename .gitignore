@@ -1,0 +1,6 @@
+.snakemake
+g_akker_prokka_test
+results
+logs
+rules.png
+selected_seqs_by_size/
