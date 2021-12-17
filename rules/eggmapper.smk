@@ -76,9 +76,11 @@ checkpoint select_by_size:
         "results/annot_selection/selected_seqs"
     output:
         directory("results/selected_seqs_by_size")
+    params:
+        config["sizes"]
     shell:
         """
         mkdir -p {output[0]} 
         # The second -size is only for testing, remove it for a real run
-        find {input[0]} -size +302c -size -304c -exec cp {{}} {output[0]} \;
+        find {input[0]} -size {params.sizes} -exec cp {{}} {output[0]} \;
         """
