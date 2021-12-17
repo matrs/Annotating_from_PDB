@@ -6,11 +6,7 @@ This workflow needs 3 databases already installed before running it:
 - Uniclust30 (`hh-suite3`) : https://github.com/soedinglab/hh-suite
 - PDB70 (`hh-suite3`) : https://github.com/soedinglab/hh-suite
 
-Once installed, use `config/config.yaml` to set their paths.
-
-## Rules' configuration
-
-Only modify the code inside `rules/` and `scripts/` if you known what you are doing.
+Once installed, use `config/config.yaml` to set their paths and all the configuration values.
 
 ## Software Requirements
 
@@ -32,3 +28,8 @@ conda create -n microbeannotator python=3.7 pip microbeannotator=2.0.5
 See <https://github.com/cruizperez/MicrobeAnnotator> for updated instructions
 
 Then, set the path to `ko_mapper.py` in the config file (use `find` in the `env` path).
+
+
+## `rules/` and `scripts/`
+
+This code it supposed to work as it is, but you are always free to modify it (specially if you known what you are doing.)

@@ -82,5 +82,5 @@ checkpoint select_by_size:
         """
         mkdir -p {output[0]} 
         # The second -size is only for testing, remove it for a real run
-        find {input[0]} -size {params.sizes} -exec cp {{}} {output[0]} \;
+        find {input[0]} {params.sizes} -exec cp {{}} {output[0]} \;
         """
